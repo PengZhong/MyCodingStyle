@@ -1,0 +1,24 @@
+1. install Package Control
+使用 ctrl+`快捷键 或者 菜单项View > Show Console 来调出命令界面, 将下面一行粘入其中，回车
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+如果是Sublime Text2，使用如下一行：
+import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
+
+
+2. Packages
+1) ConvertToUTF8
+可让Sublime正确显示中文，解决中午能显示乱码问题
+
+2) HTML-CSS-JS Prettify
+格式化代码工具
+
+3) SublimeCodeIntel
+提供代码自动补全功能
+SublimeCodeIntel是从Open Komodo项目中移植出来的代码提示插件。
+受此限制虽然代码提示支持的语言很多，
+但是并不包含最重要的C语系和Java语系
+支持的语言包括：PHP, Python, RHTML, JavaScript, Smarty, Mason, Node.js, XBL,
+Tcl, HTML, HTML5, TemplateToolkit, XUL, Django, Perl, Ruby, Python3
+
+4) SublimeREPL
+解决Sublime中使用raw_input的输入问题
