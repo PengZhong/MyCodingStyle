@@ -9,10 +9,13 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed
 1) ConvertToUTF8
 可让Sublime正确显示中文，解决中午能显示乱码问题
 
-2) HTML-CSS-JS Prettify
+2)Codecs33
+如果使用1)之后还不能正确显示中文可能是编码方式丢失，可以安装此package进行修复
+
+3) HTML-CSS-JS Prettify
 格式化代码工具
 
-3) SublimeCodeIntel
+4) SublimeCodeIntel
 提供代码自动补全功能
 SublimeCodeIntel是从Open Komodo项目中移植出来的代码提示插件。
 受此限制虽然代码提示支持的语言很多，
@@ -20,5 +23,5 @@ SublimeCodeIntel是从Open Komodo项目中移植出来的代码提示插件。
 支持的语言包括：PHP, Python, RHTML, JavaScript, Smarty, Mason, Node.js, XBL,
 Tcl, HTML, HTML5, TemplateToolkit, XUL, Django, Perl, Ruby, Python3
 
-4) SublimeREPL
+5) SublimeREPL
 解决Sublime中使用raw_input的输入问题
